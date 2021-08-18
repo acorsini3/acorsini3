@@ -1,0 +1,19 @@
+.appStyle {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(196, 187, 187);
+    padding: 12px;
+}
+
+.newElement {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.addButton {
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(201, 106, 106);
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/note3style.css">
+    <title>document</title>
+</head>
+
+<body>
+    <!-- WELCOME USER USING A JS SCRIPT-->
+
+    <p id="title"> THE NOTE APP </p>
+
+    <div id="textBox">
+        <input type="text" value="Enter your name" id="myText">
+        <input type="button" value="Enter" id="addButton">
+    </div>
+
+    <div id="content">
+        <script src="static/login3.js"></script>
+    </div>
+
+    <!-- ADD -->
+    <form action="/add" method="get">
+        <input type="text" placeholder="Enter a new note" name="n" id="note">
+        <input type="submit" value="Add" style="background-color:rgb(201, 106, 106); font-size: 20px;">
+    </form>
+
+    <!-- VIEW -->
+    <p><a href="notes3">SEE ALL NOTES </a></p>
+
+
+    <!-- SEARCH -->
+    <form action="/search" method="get">
+        <input type="text" placeholder="Enter a keyword" name="q" id="note">
+        <input type="submit" value="Search" style="background-color:rgb(201, 106, 106); font-size: 20px;">
+    </form>
+
+</body>
+
+</html>
