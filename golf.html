@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/golf.css">
+    <title>document</title>
+</head>
+
+<body>
+
+    <!--TITLE-->
+    <h1 id="title">
+        THE GOLF INDEX CALCULATION APP
+    </h1>
+    <!-- TEXT BOX + BUTTON-->
+    <div id="textBox">
+        <input type="text" placeholder="Enter a username" name="username" id="username">
+        <input type="button" value="Enter" id="addButton">
+
+    </div>
+
+    <!-- ADD A SCORE-->
+    <form action="/add" method="get">
+        <input type="text" placeholder="Add a new score" name="score" id="score">
+        <input type="hidden" name="aname" id="aname">
+        <input type="submit" value="Add" style="background-color:rgb(158, 206, 94); font-size: 20px;">
+    </form>
+
+    <!-- CALCULATE -->
+    <form action="/calculate" method="get">
+        <input type="hidden" name="cname" id="cname">
+        <input type="submit" value="Calcute Index" style="background-color:rgb(158, 206, 94); font-size: 20px;">
+    </form>
+
+    <!-- WELCOME USER USING JAVASCRIPT-->
+    <div id="content">
+        <script src="static/name.js"></script>
+    </div>
+
+    <!-- VIEW -->
+    <p>
+        <a href="scores">
+            <input type="submit" value="View all scores" style="background-color:rgb(158, 206, 94); font-size: 20px;">
+        </a>
+    </p>
+
+    <!-- RANKING -->
+    <form action="/ranking" method="get">
+        <input type="submit" value="View ranking" style="background-color:rgb(158, 206, 94); font-size: 20px;">
+    </form>
+
+    <!-- RESET -->
+    <form action="/reset" method="get">
+        <input type="submit" value="Reset all scores and index" style="background-color:rgb(158, 206, 94); font-size: 20px;">
+    </form>
+
+</body>
+
+</html>
