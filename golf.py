@@ -3,6 +3,13 @@ app = flask.Flask("golf")
 from statistics import mean
 import re
 
+def init_txt(txt_name):
+    golfdb = open (txt_name, "a")
+    golfdb.close()
+
+init_txt("scores.txt")
+init_txt("ranking.txt")
+
 def get_html(page_name):
     html_file = open (page_name + ".html")
     content = html_file.read()
